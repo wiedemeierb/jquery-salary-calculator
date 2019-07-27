@@ -22,16 +22,15 @@ function submitButton() {
                                 <td>${idNumber}</td>
                                 <td>${titleName}</td>
                                 <td>${annualName}</td>
+                                <td><button id="deleteButton">Delete</button></td>
                                 </tr>`);
     
-    // $('#firstNameDom').empty('');                            
-    // $('#totalTable').append(firstName);
-    // $('#lastNameDom').append(lastName);
-    // $('#idNumberDom').append(idNumber);
-    // $('#titleNameDom').append(titleName);
-    // $('#annualNameDom').append(annualName);
-    
-        
+    $('#firstNameIn').val(''); 
+    $('#lastNameIn').val('');
+    $('#idNumberIn').val('');
+    $('#titleNameIn').val('');
+    $('#annualNameIn').val('');
+                              
 }
 
 // calculate total monthly and update on the dom
