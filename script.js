@@ -2,7 +2,10 @@ console.log('javascript is linked');
 console.log('dom is loading');
 // DOM set up
 $(document).ready(readyNow);
+
 let totalAnnualSalary = 0;
+let totalMonthly = 0; 
+
 // create function readyNow to collect all functions
 function readyNow() {
     console.log('DOM is Ready!');
@@ -25,7 +28,10 @@ function submitButton() {
                                 <td>${annualName}</td>
                                 <td><button>Delete</button></td>
                                 </tr>`);
-    totalAnnualSalary += ($('#annualNameIn').val());
+
+    totalAnnualSalary += parseFloat(annualName);
+    
+    // ($('#annualNameIn').val());
     
     $('#firstNameIn').val(''); 
     $('#lastNameIn').val('');
@@ -36,11 +42,11 @@ function submitButton() {
     // calMonthlyTotals()
 
 }
-let totalMonthly = 0; 
+// let totalMonthly = 0; 
 // // // calculate total monthly and update on the dom
 function calMonthlyTotals() {
 
-    totalAnnualSalary += ($('#annualNameIn').val());
+    // totalAnnualSalary += parseFloat(($('#annualNameIn').val()));
     console.log(totalAnnualSalary);
 
     totalMonthlySalary = (totalAnnualSalary / 12 );
