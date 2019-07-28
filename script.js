@@ -49,6 +49,12 @@ function calMonthlyTotals() {
     
     $('#totalMonthly').text('Total Monthly: $' + totalMonthlySalary );
     console.log('working');
+    if(totalMonthlySalary > 20000){
+        $('#totalMonthly').addClass('bg-danger');
+            
+        console.log('this should be red');
+        
+    }
     return totalMonthlySalary
 }
 // delete button - delete this row from the table
