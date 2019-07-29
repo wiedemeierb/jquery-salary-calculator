@@ -23,3 +23,9 @@ html {
 #submitButton {
     margin-top: 10px;
 }
+#dollarBills {
+    border: none;
+}
+#tableHeader {
+    background-color: gray;
+}
