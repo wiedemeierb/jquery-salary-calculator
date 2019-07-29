@@ -26,7 +26,7 @@ function submitButton() {
                                 <td>${lastName}</td>
                                 <td>${idNumber}</td>
                                 <td>${titleName}</td>
-                                <td>${annualName}</td>
+                                <td class="float-right">$${annualName}</td>
                                 <td><button class="deleteButton">Delete</button></td>
                                 </tr>`);
 
@@ -39,8 +39,8 @@ function submitButton() {
     $('#annualNameIn').val('');
 
 }
-// let totalMonthly = 0; 
-// // // calculate total monthly and update on the dom
+
+// calculate total monthly and update on the dom
 function calMonthlyTotals() {
     console.log(totalAnnualSalary);
 
